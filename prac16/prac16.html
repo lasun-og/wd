@@ -1,0 +1,44 @@
+<!--
+16. Change Background Color on Button Click
+Create a webpage with a button. Each click changes background color to a different color (use array
+of 3–4 colors).
+Hint: document.body.style.backgroundColor = colors[index]. Loop colors using modulo.
+-->
+
+
+<!DOCTYPE html>
+<style>
+    body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+</style>
+<html>
+
+<body>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+
+        let colors = ["red", "blue", "green", "yellow"];
+
+        let index = 0;
+
+        function changeColor() {
+
+            document.body.style.backgroundColor = colors[index];
+
+            index++;
+
+            index = index % colors.length;
+
+        }
+
+    </script>
+
+</body>
+</html>

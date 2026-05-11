@@ -1,0 +1,37 @@
+<!--
+6. Simple Registration Form (No Validation)
+Create a form with name, roll number, and branch. Add a submit button. No JavaScript needed.
+Use CSS for spacing and alignment.
+Hint: Use <form>, <input type="text">, <input type="submit">. Use margin and padding in CSS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;" >
+    
+    <div align="center" style="background-color: aquamarine; height: 300px; border :5px solid black; border-radius: 50px; ">
+        <form style="padding: 100px;" action="">
+
+            <label  for="name"> Name :</label>
+            <input style="width: 60%; border: 2px solid; border-radius: 20px;" type="text" name="pname" id="name">
+            <br><br>
+            <label style="padding-top: 100px;" for="roll">Roll No :</label>
+            <input style="width: 60%; border: 2px solid; border-radius: 20px;" type="number" max="80" name="proll" id="roll">
+            <br><br>
+            <label for="branch">Branch</label>
+            <select style="width: 70%; border: 2px solid; border-radius: 20px;" name="pbranch" id="branch">
+                <option value="comp">Computer Engineering</option>
+                <option value="civil">Civil Engineering</option>
+            </select>
+            <br><br><br>
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+</html>
