@@ -1,0 +1,43 @@
+<!--
+14. Greeting Message Based on Time
+Use JavaScript to display "Good Morning", "Good Afternoon", or "Good Evening" based on current 
+system time on webpage load.
+
+Hint: Use new Date().getHours(). Display message using document.write() or innerHTML
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Message</title>
+</head>
+
+<body align="center">
+
+    <h1>Greeting Message</h1>
+
+    <h2 id="msg"></h2>
+
+</body>
+
+<!-- JS Start -->
+<script>
+
+    let hour = new Date().getHours();
+
+    if(hour < 12){
+        document.getElementById("msg").innerHTML = "Good Morning";
+    }
+    else if(hour < 18){
+        document.getElementById("msg").innerHTML = "Good Afternoon";
+    }
+    else{
+        document.getElementById("msg").innerHTML = "Good Evening";
+    }
+
+</script>
+<!-- JS End -->
+
+</html>
