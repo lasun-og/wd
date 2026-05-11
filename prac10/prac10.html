@@ -1,0 +1,52 @@
+<!--
+10. Department Contact Table
+Create a table showing 3 faculty names and their email IDs. Apply internal CSS for alternate row 
+background color (zebra striping). 
+
+Hint: Use tr:nth-child(even) {background-color: #f2f2f2;}.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Contact Table</title>
+</head>
+
+<body align="center">
+
+    <h1>Department Contact Table</h1>
+
+    <table border="1px" align="center">
+
+        <tr>
+            <th>Faculty Name</th>
+            <th>Email ID</th>
+        </tr>
+
+        <tr>
+            <td>Prof. More</td>
+            <td>more@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Prof. Patil</td>
+            <td>patil@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Prof. Korde</td>
+            <td>korde@gmail.com</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
