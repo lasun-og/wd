@@ -1,0 +1,49 @@
+<!--
+19. Number Comparison
+Take two numbers from user using prompts. Use JavaScript to display which number is greater, or if 
+both are equal.
+
+Hint: Use prompt() to take input. Use if-else for comparison.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Comparison</title>
+</head>
+
+<body align="center">
+
+    <h1>Number Comparison</h1>
+
+    <h2 id="result"></h2>
+
+</body>
+
+<!-- JS Start -->
+<script>
+
+    let num1 = parseInt(prompt("Enter First Number"));
+    let num2 = parseInt(prompt("Enter Second Number"));
+
+    if(num1 > num2){
+        document.getElementById("result").innerHTML =
+        num1 + " is Greater";
+    }
+
+    else if(num2 > num1){
+        document.getElementById("result").innerHTML =
+        num2 + " is Greater";
+    }
+
+    else{
+        document.getElementById("result").innerHTML =
+        "Both Numbers are Equal";
+    }
+
+</script>
+<!-- JS End -->
+
+</html>
