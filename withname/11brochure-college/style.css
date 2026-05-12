@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.brochure{
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    width: 500px;
+    background-color: lightblue;
+}
+
+img{
+    border: 2px solid black;
+}
+
+p{
+    font-size: 20px;
+}

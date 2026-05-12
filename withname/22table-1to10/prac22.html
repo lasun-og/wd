@@ -1,0 +1,51 @@
+<!--
+22. Simple Multiplication Table
+Take a number from user using textbox. On button click, display its multiplication table from 1 to 10 
+using JavaScript loop.
+
+Hint: Use for loop. Display result in <div> using innerHTML +=.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+
+<body align="center">
+
+    <h1>Simple Multiplication Table</h1>
+
+    <input type="number" id="num" placeholder="Enter Number">
+    <br><br>
+
+    <button onclick="showTable()">
+        Show Table
+    </button>
+
+    <div id="result"></div>
+
+</body>
+
+<!-- JS Start -->
+<script>
+
+    function showTable(){
+
+        let num = document.getElementById("num").value;
+
+        document.getElementById("result").innerHTML = "";
+
+        for(let i = 1; i <= 10; i++){
+
+            document.getElementById("result").innerHTML +=
+            num + " x " + i + " = " + (num * i) + "<br>";
+        }
+    }
+
+</script>
+<!-- JS End -->
+
+</html>

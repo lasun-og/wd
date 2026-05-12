@@ -1,0 +1,49 @@
+<!--
+17. Simple Addition Calculator
+Create two input boxes and an "Add" button. When clicked, display sum of two numbers 
+using JavaScript.
+
+Hint: Use parseInt() or parseFloat(). Sum = num1 + num2.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Calculator</title>
+</head>
+
+<body align="center">
+
+    <h1>Simple Addition Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter Number 1">
+    <br><br>
+
+    <input type="number" id="num2" placeholder="Enter Number 2">
+    <br><br>
+
+    <button onclick="addNum()">Add</button>
+
+    <h2 id="result"></h2>
+
+</body>
+
+<!-- JS Start -->
+<script>
+
+    function addNum(){
+
+        let n1 = parseInt(document.getElementById("num1").value);
+        let n2 = parseInt(document.getElementById("num2").value);
+
+        let sum = n1 + n2;
+
+        document.getElementById("result").innerHTML = "Sum = " + sum;
+    }
+
+</script>
+<!-- JS End -->
+
+</html>

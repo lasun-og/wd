@@ -1,0 +1,68 @@
+<!--
+15. Button Click Counter
+Create a button and a paragraph. Every time button is clicked, increase counter value by 1 and display
+"Button clicked X times".
+Hint: Use let count = 0; and onclick event. Update innerText.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        div{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 60px;
+        }
+        .btn:active {
+            background-color: aquamarine;
+        }
+        .btn:hover{
+            border-color: black;
+        }
+        .btn {
+            height:100px;
+            width: 250px;
+            border : 2px solid goldenrod;
+            border-radius: 90px;
+            color: black;
+            background-color: aqua;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        let num = 0;
+        function addNum() {
+            num++
+            document.getElementById("click").innerHTML = `Click count : ${num}`
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <h1>Button Clicker</h1>
+    <div>
+        <button class="btn" onclick="addNum()">Click Me</button>
+        <p id="click">Clicked this button to start</p>
+    </div>
+</body>
+</html>
